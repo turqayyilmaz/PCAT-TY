@@ -1,0 +1,27 @@
+<%- include("../partials/_header.ejs",{page_name:page_name}) -%>
+
+<body>
+    <div class="tm-page-wrap mx-auto">
+        <%- mainheader %>
+        
+
+        <div class="container-fluid">
+            <div id="content" class="mx-auto tm-content-container">
+                <main>
+                    <%- body %>
+                </main>
+
+                
+                <%- include("../partials/_footer.ejs") %>
+            </div> <!-- tm-content-container -->
+        </div>
+
+    </div> <!-- .tm-page-wrap -->
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <%- script %>
+    
+</body>
+
+</html>
